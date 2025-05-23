@@ -11,17 +11,28 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: #1F1F1F;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Inter", serif;
+  font-size: 14px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color: #F7F9FA;
+  color: #1F1F1F;
 }
 
 img {
@@ -33,15 +44,98 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
+/* Post */
+.posts {
+  margin: 80px auto;
+  padding: 0;
+}
 
-/* MAIN-CONTENT */
-.main-content {
-  flex-grow: 1;
+.posts-header {
+  margin: 0 0 32px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.posts-title {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50.4px;
+  letter-spacing: 0.2px;
+}
+
+.post-btn {
+  padding: 8px 32px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #0070A0;
+  background-color: #F7F9FA;
+  border: none;
+  cursor: pointer;
+}
+
+.post-list {
+  margin-left: -32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post-item {
+  margin-left: 32px;
+  max-width: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #fff;
+}
+
+.post-content {
+  padding: 25px 24px 28px;
+}
+
+.label {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 2px 12px 4px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #2C90C9;
+  background-color: #E6F7FF;
+}
+
+.post-title {
+  margin: 0 0 11px;
+  padding: 0;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31.25px;
+  letter-spacing: 0.2px;
+}
+
+.post-text {
+  margin: 0 0 13px;
+  padding: 0;
+}
+
+.post-data {
+  margin: 0;
+  padding: 0;
 }
